@@ -12,7 +12,7 @@ Make a turret platform which can be controlled with keyboard arrow keys
 
 ### Demo
 
-2018-03-20
+2018-03-27
 
 ### Scrum meetings
 
