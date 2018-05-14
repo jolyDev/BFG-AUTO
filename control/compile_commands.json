@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/pavel/KPI/GDK/laser/build",
+  "command": "/usr/bin/c++    -I/home/pavel/KPI/GDK/laser/include -I/usr/include/opencv    -std=c++14 -Wall -o CMakeFiles/laser.dir/main.cpp.o -c /home/pavel/KPI/GDK/laser/main.cpp",
+  "file": "/home/pavel/KPI/GDK/laser/main.cpp"
+}
+]
