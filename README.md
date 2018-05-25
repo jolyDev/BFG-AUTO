@@ -1,8 +1,39 @@
 # BFG-AUTO
 project for GDC (semi-automatic turret)
 
-[DOC](https://docs.google.com/document/d/16fQ5roNxYUmbehbFyY3zvwU74jlr1B-Jp8oJk98EEso/edit?usp=sharing)
+##Апаратні компоненти
 
-[Project Backlog](https://docs.google.com/spreadsheets/d/1cY_ScFS0T432tNFX4UH3oGC6mXj1sE8Ztw1YUMmuJqA/edit?usp=sharing)
+* Сервомотор неперервного обертання 360° ([посилання](https://arduino.ua/prod2082-servoprivod-springrc-sm-s4303r-s-nererivnim-vrashheniem-na-360))
+* Сервомотор 180° ([посилання](https://arduino.ua/prod994-servo-s05nf))
+* Камера ([посилання](https://rozetka.com.ua/defender_c_110_63110/p6069069/#tab=all))
+* Частина корпуса роздрукована на 3D-принтері ([посилання на модель](https://drive.google.com/drive/folders/1i9N3h8fWiRWUBJrLf0S0l256e_Wsr6Yv?usp=sharing))
+* Підставка зібрана з металевого конструктора
+* Arduino
+* Будь-який комп'ютер для обробки зображення з камери
 
-[First Sprint](sprint1.md)
+##Програмні компоненти
+
+* Програма для Arduino ([посилання](https://github.com/progbase/BFG-AUTO/tree/master/arduino))
+* Програма для розпізнавання вказівника ([посилання](https://github.com/progbase/BFG-AUTO/tree/master/control))
+
+Для збірки програми для розпізнавання необхідно встановити libserial та opencv
+
+
+    sudo apt install libserial-dev libopencv-dev
+
+
+Після цього програма збирається за допомогою CMake
+
+##Збірка
+
+Живлення для двох сервомоторів подається окремо. 
+
+Сервомотор вертикального обертання працює безпосередньо від Arduino. Коричневий провід підключається до виходу 5V, фіолетовий - до GND, жовтий - до піна 9.
+
+Сервомотор горизонтального обертання живиться через USB. Його можна підключити до того самого комп'ютера, з якого здійснюється керування, або до павербанка. Також необхідно синій провід підключити до GND, а жовтий до піна 10.
+
+Камера і Arduino підключаються до комп'ютера через USB.
+
+Після цього можна запускати програму керування. Першим аргументом вказується номер камери. На ноутбуках зазвичай `1`.
+
+Турель наводиться на лазер зеленого коліру.
