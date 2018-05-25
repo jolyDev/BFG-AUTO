@@ -1,7 +1,7 @@
 # BFG-AUTO
 project for GDC (semi-automatic turret)
 
-##Апаратні компоненти
+## Апаратні компоненти
 
 * Сервомотор неперервного обертання 360° ([посилання](https://arduino.ua/prod2082-servoprivod-springrc-sm-s4303r-s-nererivnim-vrashheniem-na-360))
 * Сервомотор 180° ([посилання](https://arduino.ua/prod994-servo-s05nf))
@@ -11,7 +11,7 @@ project for GDC (semi-automatic turret)
 * Arduino
 * Будь-який комп'ютер для обробки зображення з камери
 
-##Програмні компоненти
+## Програмні компоненти
 
 * Програма для Arduino ([посилання](https://github.com/progbase/BFG-AUTO/tree/master/arduino))
 * Програма для розпізнавання вказівника ([посилання](https://github.com/progbase/BFG-AUTO/tree/master/control))
@@ -24,7 +24,7 @@ project for GDC (semi-automatic turret)
 
 Після цього програма збирається за допомогою CMake
 
-##Збірка
+## Збірка
 
 Живлення для двох сервомоторів подається окремо. 
 
